@@ -13,7 +13,7 @@ $CONFIG['typesdb'][] = '/usr/share/collectd/types.db';
 $CONFIG['rrdtool'] = '/usr/bin/rrdtool';
 
 # rrdtool special command-line options
-$CONFIG['rrdtool_opts'] = array();
+$CONFIG['rrdtool_opts'] = array('-N');
 
 # category of hosts to show on main page
 #$CONFIG['cat']['category1'] = array('host1', 'host2');
@@ -22,7 +22,7 @@ $CONFIG['rrdtool_opts'] = array();
 #$CONFIG['cat']['Mailservers'] = '/mail\d+/';
 
 # default plugins to show on host page
-$CONFIG['overview'] = array('load', 'cpu', 'memory', 'swap');
+$CONFIG['overview'] = array('load', 'cpu', 'memory');
 
 # example of filter to show only the if_octets of eth0 on host page
 # (interface must be enabled in the overview config array)
@@ -30,16 +30,16 @@ $CONFIG['overview'] = array('load', 'cpu', 'memory', 'swap');
 
 # default plugins time range
 $CONFIG['time_range']['default'] = 86400;
-$CONFIG['time_range']['uptime']  = 31536000;
+$CONFIG['time_range']['uptime']  = 2592000;
 
 # show load averages and used memory on overview page
 $CONFIG['showload'] = true;
-$CONFIG['showmem'] = false;
-$CONFIG['showtime'] = false;
+$CONFIG['showmem'] = true;
+$CONFIG['showtime'] = true;
 
 $CONFIG['term'] = array(
-	'2hour'	 => 3600 * 2,
-	'8hour'	 => 3600 * 8,
+	'1hour'	 => 3600 * 1,
+	'6hour'	 => 3600 * 6,
 	'day'	 => 86400,
 	'week'	 => 86400 * 7,
 	'month'	 => 86400 * 31,
@@ -57,17 +57,17 @@ $CONFIG['graph_type'] = 'png';
 $CONFIG['rrd_fetch_method'] = 'sync';
 
 # use the negative X-axis in I/O graphs
-$CONFIG['negative_io'] = false;
+$CONFIG['negative_io'] = true;
 
 # add XXth percentile line + legend to network graphs
 # false = disabled; 95 = 95th percentile
-$CONFIG['percentile'] = false;
+$CONFIG['percentile'] = 95;
 
 # create smooth graphs (rrdtool -E)
-$CONFIG['graph_smooth'] = false;
+$CONFIG['graph_smooth'] = true;
 
 # draw min/max spikes in a lighter color in graphs with type default
-$CONFIG['graph_minmax'] = false;
+$CONFIG['graph_minmax'] = true;
 
 # The URL that provides RRD files for the "canvas" graph type. Examples:
 # 'rrd/{file}' is replaced by 'rrd/example.com/load/load.rrd'
@@ -75,17 +75,17 @@ $CONFIG['graph_minmax'] = false;
 $CONFIG['rrd_url'] = 'rrd.php?path={file_escaped}';
 
 # browser cache time for the graphs (in seconds)
-$CONFIG['cache'] = 90;
+$CONFIG['cache'] = 10;
 
 # page refresh (in seconds)
 $CONFIG['page_refresh'] = '';
 
 # default width/height of the graphs
-$CONFIG['width'] = 400;
-$CONFIG['height'] = 175;
+$CONFIG['width'] = 450;
+$CONFIG['height'] = 200;
 # default width/height of detailed graphs
-$CONFIG['detail-width'] = 800;
-$CONFIG['detail-height'] = 350;
+$CONFIG['detail-width'] = 1600;
+$CONFIG['detail-height'] = 650;
 # max width/height of a graph (to prevent from OOM)
 $CONFIG['max-width'] = $CONFIG['detail-width'] * 2;
 $CONFIG['max-height'] = $CONFIG['detail-height'] * 2;
