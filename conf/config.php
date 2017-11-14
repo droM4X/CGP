@@ -39,7 +39,7 @@ $CONFIG['showtime'] = true;
 
 $CONFIG['term'] = array(
 	'1hour'	 => 3600 * 1,
-	'6hour'	 => 3600 * 6,
+	'12hour' => 3600 * 12,
 	'day'	 => 86400,
 	'week'	 => 86400 * 7,
 	'month'	 => 86400 * 31,

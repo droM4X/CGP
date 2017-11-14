@@ -2,10 +2,19 @@
 
 require_once 'Base.class.php';
 
-class Type_Default extends Type_Base {
+class Type_Sensors extends Type_Base {
 
 	function rrd_gen_graph() {
 		$rrdgraph = $this->rrd_options();
+		$rrdgraph[] = '-r';
+		#$rrdgraph[] = '-A';
+		#$rrdgraph[] = '-J';
+		#$rrdgraph[] = '-M';
+		$rrdgraph[] = '--left-axis-format';
+		$rrdgraph[] = '%.1lf';
+		#$rrdgraph[] = '-Y';
+		#$rrdgraph[] = '-y';
+		#$rrdgraph[] = '1:5';
 
 		$sources = $this->rrd_get_sources();
 

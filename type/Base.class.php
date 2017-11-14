@@ -115,7 +115,7 @@ class Type_Base {
 			return $color;
 	}
 
-	function get_faded_color($fgc, $bgc='ffffff', $percent=0.25) {
+	function get_faded_color($fgc, $bgc='ffffff', $percent=0.15) {
 		$fgc = $this->validate_color($fgc);
 		if (!is_numeric($percent))
 			$percent=0.25;
@@ -277,6 +277,15 @@ class Type_Base {
 
 	function rrd_options() {
 		$rrdgraph = array();
+
+		$rrdgraph[] = '--grid-dash';
+		$rrdgraph[] = '1:0';
+		$rrdgraph[] = '-N';
+		$rrdgraph[] = '-c';
+		$rrdgraph[] = 'GRID#00000040';
+		$rrdgraph[] = '-c';
+		$rrdgraph[] = 'MGRID#80400060';
+
 		foreach($this->rrdtool_opts as $opt)
 			$rrdgraph[] = $opt;
 		if ($this->graph_smooth)
@@ -285,7 +294,7 @@ class Type_Base {
 			$rrdgraph[] = '--base';
 			$rrdgraph[] = $this->base;
 		}
-		if (array_search('-l', $rrdgraph) === false) {
+		if (array_search('-l', $rrdgraph) === false and array_search('-J', $rrdgraph) === false and array_search('-M', $rrdgraph) and array_search('-A', $rrdgraph) and array_search('-r', $rrdgraph)) {
 			$rrdgraph[] = '-l';
 			$rrdgraph[] = '0';
 		}
