@@ -1,6 +1,6 @@
 {
 	"conntrack": {
-		"title": "Conntrack entries on {{HOST}}",
+		"title": "Conntrack Entries on {{HOST}}",
 		"vertical": "Entries",
 		"legend": {
 			"value": {
@@ -8,6 +8,11 @@
 				"color": "0000f0"
 			}
 		},
-		"legend_format": "%.1lf"
+		"legend_format": "%5.0lf"
+	},
+	"percent": {
+		"title": "Conntrack Utilization on {{HOST}}",
+		"vertical": "%",
+		"legend_format": "%5.1lf%%"
 	}
 }
