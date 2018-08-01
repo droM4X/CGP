@@ -1,0 +1,43 @@
+{
+	"if_octets": {
+		"title": "Collectd Traffic on {{HOST}}",
+		"vertical": "{{ND}} per second",
+		"type": "io",
+		"legend": {
+			"rx": {
+				"name": "Receive",
+				"color": "0000ff"
+			},
+			"tx": {
+				"name": "Transmit",
+				"color": "00b000"
+			}
+		},
+		"legend_format": "%5.1lf%s",
+		"datasize": true
+	},
+	"if_packets": {
+		"title": "Collectd Packets on {{HOST}}",
+		"vertical": "Packets per second",
+		"type": "io",
+		"legend": {
+			"rx": {
+				"name": "Receive",
+				"color": "0000ff"
+			},
+			"tx": {
+				"name": "Transmit",
+				"color": "00b000"
+			}
+		},
+		"legend_format": "%5.1lf%s"
+	},
+	"queue_length": {
+		"title": "Collectd Network Queue Length on {{HOST}}",
+		"vertical": "Metrics"
+	},
+	"total_values": {
+		"title": "Collectd Network Rates on {{HOST}}",
+		"vertical": "Metrics"
+	}
+}

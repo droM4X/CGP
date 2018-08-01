@@ -1,0 +1,12 @@
+{
+	"frequency": {
+		"title": "Frequency on {{HOST}}",
+		"vertical": "Hz",
+		"legend_format": "%5.1lf%s"
+	},
+	"percent": {
+		"title": "Utilization on {{HOST}}",
+		"vertical": "%",
+		"legend_format": "%3.0lf%%"
+	}
+}

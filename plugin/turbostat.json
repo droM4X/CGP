@@ -1,0 +1,32 @@
+{
+	"temperature": {
+		"title": "Temperature ({{PI}})",
+		"vertical": "Celsius",
+		"legend_format": "%5.1lf"
+	},
+	"power": {
+		"title": "CPU Power on {{HOST}}",
+		"vertical": "W",
+		"legend_format": "%5.1lf"
+	},
+	"frequency": {
+		"title": "CPU Frequency ({{PI}})",
+		"vertical": "Hz",
+		"legend_format": "%5.1lf%s",
+		"scale": 1000000
+	},
+	"percent": {
+		"title": "C-States ({{PI}})",
+		"vertical": "%",
+		"legend_format": "%5.1lf%%"
+	},
+	"gauge": {
+		"title": "Sanity Check ({{PI}})",
+		"vertical": ""
+	},
+	"count": {
+		"title": "SMI ({{PI}})",
+		"vertical": "Count",
+		"legend_format": "%5.0lf"
+	}
+}

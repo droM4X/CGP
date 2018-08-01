@@ -1,0 +1,9 @@
+{
+	"fanspeed": {
+		"title": "PWM on {{HOST}}",
+		"vertical": "%",
+		"type": "default",
+		"scale": 0.39216,
+		"legend_format": "%5.1lf%%"
+	}
+}
