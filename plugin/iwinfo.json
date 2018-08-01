@@ -1,0 +1,40 @@
+{
+	"signal_noise": {
+		"title": "Noise Power ({{PI}}) on {{HOST}}",
+		"vertical": "dBm",
+		"legend": {
+			"value": {
+				"name": "Noise level",
+				"color": "0000f0"
+			}
+		},
+		"legend_format": "%6.1lf"
+	},
+	"signal_power": {
+		"title": "Signal Power ({{PI}}) on {{HOST}}",
+		"vertical": "dBm",
+		"legend": {
+			"value": {
+				"name": "Signal level",
+				"color": "0000f0"
+			}
+		},
+		"legend_format": "%6.1lf"
+	},
+	"signal_quality": {
+		"title": "Link Quality ({{PI}}) on {{HOST}}",
+		"vertical": "a.u.",
+		"legend": {
+			"value": {
+				"name": "Link quality",
+				"color": "0000f0"
+			}
+		},
+		"legend_format": "%6.1lf"
+	},
+	"stations": {
+		"title": "Associated Stations ({{PI}}) on {{HOST}}",
+		"vertical": "Count",
+		"legend_format": "%3.0lf"
+	}
+}
