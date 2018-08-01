@@ -2,7 +2,6 @@
 	"uptime": {
 		"title": "NVME Operation Time ({{PI}})",
 		"vertical": "Hours",
-		"type": "default",
 		"scale": 0.00027778
 	},
 	"total_bytes": {

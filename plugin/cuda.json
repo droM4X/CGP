@@ -43,7 +43,6 @@
 	"fanspeed": {
 		"title": "Fan PWM ({{PI}})",
 		"vertical": "%",
-		"type": "default",
 		"legend_format": "%3.0lf%%"
 	}
 }
