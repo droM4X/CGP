@@ -1,0 +1,46 @@
+{
+	"uptime": {
+		"title": "NVME Operation Time ({{PI}})",
+		"vertical": "Hours",
+		"type": "default",
+		"scale": 0.00027778
+	},
+    "total_bytes": {
+		"title": "NVME Traffic ({{PI}})",
+		"vertical": "Bytes/s"
+	},
+    "operations": {
+		"title": "NVME Commands ({{PI}})",
+		"vertical": "Command/s"
+	},
+    "temperature": {
+		"title": "NVME Temperature ({{PI}})",
+		"vertical": "Celsius",
+		"legend_format": "%3.0lf%s"
+	},
+    "percent": {
+		"title": "NVME Health ({{PI}})",
+		"vertical": "%",
+		"legend_format": "%3.0lf%%"
+	},
+    "gauge": {
+		"title": "NVME Critical Warning ({{PI}})",
+		"vertical": "RAW",
+		"legend_format": "%2.0lf"
+	},
+    "count": {
+		"title": "NVME Power On ({{PI}})",
+		"vertical": "Total Count",
+		"legend_format": "%5.0lf"
+	},
+    "disk_error": {
+		"title": "NVME Errors ({{PI}})",
+		"vertical": "Total Count",
+		"legend_format": "%5.0lf"
+	},
+    "duration": {
+		"title": "NVME Overheat ({{PI}})",
+		"vertical": "Total Seconds",
+		"legend_format": "%5.0lf"
+	}
+}
