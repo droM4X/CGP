@@ -1,0 +1,49 @@
+{
+	"temperature": {
+		"title": "Temperature ({{PI}})",
+		"vertical": "Celsius",
+		"legend_format": "%3.0lf"
+	},
+	"power": {
+		"title": "Power ({{PI}})",
+		"vertical": "W",
+		"legend_format": "%5.1lf"
+	},
+	"frequency": {
+		"title": "Frequency ({{PI}})",
+		"vertical": "Hz",
+		"legend_format": "%5.1lf%s"
+	},
+	"percent": {
+		"title": "Utilization ({{PI}})",
+		"vertical": "%",
+		"legend_format": "%5.1lf%%"
+	},
+	"bitrate": {
+		"title": "PCIe Traffic ({{PI}})",
+		"vertical": "{{ND}}/s",
+		"type": "io",
+		"legend": {
+			"pcie_rx": {
+				"name": "Receive",
+				"color": "0000ff"
+			},
+			"pcie_tx": {
+				"name": "Transmit",
+				"color": "00b000"
+			}
+		},
+		"legend_format": "%5.1lf%s",
+		"datasize": true
+	},
+	"memory": {
+		"title": "RAM ({{PI}})",
+		"vertical": "Bytes"
+	},
+	"fanspeed": {
+		"title": "Fan PWM ({{PI}})",
+		"vertical": "%",
+		"type": "default",
+		"legend_format": "%3.0lf%%"
+	}
+}
