@@ -2,7 +2,7 @@
 	"temperature": {
 		"title": "Temperature ({{PI}})",
 		"vertical": "Celsius",
-		"legend_format": "%5.1lf"
+		"legend_format": "%3.0lf"
 	},
 	"power": {
 		"title": "CPU Power on {{HOST}}",

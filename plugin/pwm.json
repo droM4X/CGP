@@ -1,6 +1,6 @@
 {
 	"fanspeed": {
-		"title": "PWM on {{HOST}}",
+		"title": "Fan PWM on {{HOST}}",
 		"vertical": "%",
 		"type": "default",
 		"scale": 0.39216,
