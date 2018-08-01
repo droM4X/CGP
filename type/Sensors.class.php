@@ -11,7 +11,7 @@ class Type_Sensors extends Type_Base {
 		#$rrdgraph[] = '-J';
 		#$rrdgraph[] = '-M';
 		$rrdgraph[] = '--left-axis-format';
-		$rrdgraph[] = '%.1lf';
+		$rrdgraph[] = '%.1lf'; # Due to a bug in rrdtool, you cannot include the SI magnitude ('%c') here.
 		#$rrdgraph[] = '-Y';
 		#$rrdgraph[] = '-y';
 		#$rrdgraph[] = '1:5';
