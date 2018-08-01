@@ -5,40 +5,65 @@
 		"type": "default",
 		"scale": 0.00027778
 	},
-    "total_bytes": {
+	"total_bytes": {
 		"title": "NVME Traffic ({{PI}})",
-		"vertical": "Bytes/s"
+		"vertical": "{{ND}}/s",
+		"type": "io",
+		"legend": {
+			"Read bps": {
+				"name": "Read",
+				"color": "0000ff"
+			},
+			"Write bps": {
+				"name": "Write",
+				"color": "00b000"
+			}
+		},
+		"legend_format": "%5.1lf%s",
+		"datasize": true
 	},
-    "operations": {
+	"operations": {
 		"title": "NVME Commands ({{PI}})",
-		"vertical": "Command/s"
+		"vertical": "Command/s",
+		"type": "io",
+		"legend": {
+			"Read ops": {
+				"name": "Read",
+				"color": "0000ff"
+			},
+			"Write ops": {
+				"name": "Write",
+				"color": "00b000"
+			}
+		},
+		"legend_format": "%5.1lf%s"
 	},
-    "temperature": {
+	"temperature": {
 		"title": "NVME Temperature ({{PI}})",
 		"vertical": "Celsius",
-		"legend_format": "%3.0lf%s"
+		"legend_format": "%3.0lf"
 	},
-    "percent": {
+	"percent": {
 		"title": "NVME Health ({{PI}})",
 		"vertical": "%",
 		"legend_format": "%3.0lf%%"
 	},
-    "gauge": {
+	"gauge": {
 		"title": "NVME Critical Warning ({{PI}})",
 		"vertical": "RAW",
 		"legend_format": "%2.0lf"
 	},
-    "count": {
+	"count": {
 		"title": "NVME Power On ({{PI}})",
 		"vertical": "Total Count",
 		"legend_format": "%5.0lf"
 	},
-    "disk_error": {
+	"disk_error": {
 		"title": "NVME Errors ({{PI}})",
 		"vertical": "Total Count",
 		"legend_format": "%5.0lf"
 	},
-    "duration": {
+	"duration": {
 		"title": "NVME Overheat ({{PI}})",
 		"vertical": "Total Seconds",
 		"legend_format": "%5.0lf"
