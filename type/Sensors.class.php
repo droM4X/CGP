@@ -6,15 +6,10 @@ class Type_Sensors extends Type_Base {
 
 	function rrd_gen_graph() {
 		$rrdgraph = $this->rrd_options();
-		$rrdgraph[] = '-r';
-		#$rrdgraph[] = '-A';
-		#$rrdgraph[] = '-J';
-		#$rrdgraph[] = '-M';
-		$rrdgraph[] = '--left-axis-format';
-		$rrdgraph[] = '%.1lf'; # Due to a bug in rrdtool, you cannot include the SI magnitude ('%c') here.
-		#$rrdgraph[] = '-Y';
-		#$rrdgraph[] = '-y';
-		#$rrdgraph[] = '1:5';
+		#$rrdgraph[] = '-r';
+		# Alt-Y-scale always requires alt-Y-grid for meaningful Y-axis labels
+		$rrdgraph[] = '-A';
+		$rrdgraph[] = '-Y';
 
 		$sources = $this->rrd_get_sources();
 
