@@ -1,2 +1,5 @@
 conf/config.local.php
 plugin/local/*.json
+
+*.swp
+

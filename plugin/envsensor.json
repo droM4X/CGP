@@ -1,0 +1,54 @@
+{
+	"temperature": {
+		"title": "Temperature ({{PI}}) on {{HOST}}",
+		"vertical": "Celsius",
+		"legend_format": "%3.2lf",
+		"type": "sensors"
+	},
+	"voltage": {
+		"title": "Voltage ({{PI}}) on {{HOST}}",
+		"legend_format": "%3.2lf",
+		"type": "sensors"
+	},
+	"pressure": {
+		"title": "Pressure ({{PI}}) on {{HOST}}",
+		"vertical": "Pascal",
+		"legend_format": "%3.3lf%s",
+		"type": "sensors"
+	},
+	"humidity": {
+		"title": "Humidity ({{PI}}) on {{HOST}}",
+		"vertical": "RH (%)",
+		"legend_format": "%3.2lf",
+		"type": "sensors"
+	},
+	"percent": {
+		"title": "Percentage ({{PI}}) on {{HOST}}",
+		"vertical": "%",
+		"legend_format": "%3.2lf",
+		"type": "sensors"
+	},
+	"power": {
+		"title": "Power ({{PI}}) on {{HOST}}",
+		"vertical": "W",
+		"legend_format": "%3.2lf%s",
+		"type": "sensors"
+	},
+	"flow": {
+		"title": "Flow ({{PI}}) on {{HOST}}",
+		"vertical": "CFM",
+		"legend_format": "%3.2lf%s",
+		"type": "sensors"
+	},
+	"spl": {
+		"title": "Sound ({{PI}}) on {{HOST}}",
+		"vertical": "dB SPL",
+		"legend_format": "%3.2lf",
+		"type": "sensors"
+	},
+	"gauge": {
+		"title": "Value ({{PI}}) on {{HOST}}",
+		"legend_format": "%3.2lf%s",
+		"type": "sensors"
+	}
+}

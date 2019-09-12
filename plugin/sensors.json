@@ -7,12 +7,12 @@
 	"temperature": {
 		"title": "Temperature ({{PI}}) on {{HOST}}",
 		"vertical": "Celsius",
-		"legend_format": "%7.3lf",
+		"legend_format": "%3.2lf",
 		"type": "sensors"
 	},
 	"voltage": {
 		"title": "Voltage ({{PI}}) on {{HOST}}",
-		"legend_format": "%7.3lf",
+		"legend_format": "%3.2lf",
 		"type": "sensors"
 	}
 }
