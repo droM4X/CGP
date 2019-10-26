@@ -81,6 +81,10 @@ switch ($plugin_json[$type]['type']) {
 		require_once 'type/Sensors.class.php';
 		$obj = new Type_Sensors($CONFIG, GET());
 		break;
+	case 'sensorslog':
+		require_once 'type/SensorsLog.class.php';
+		$obj = new Type_SensorsLog($CONFIG, GET());
+		break;
 	default:
 		require_once 'type/Default.class.php';
 		$obj = new Type_Default($CONFIG, GET());

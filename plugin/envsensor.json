@@ -50,5 +50,11 @@
 		"title": "Value ({{PI}}) on {{HOST}}",
 		"legend_format": "%3.2lf%s",
 		"type": "sensors"
-	}
+	},
+	"count": {
+ 		"title": "Count ({{PI}}) on {{HOST}}",
+ 		"legend_format": "%3.2lf%s",
+ 		"type": "sensorslog"
+ 	}
 }
+
