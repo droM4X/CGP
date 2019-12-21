@@ -66,5 +66,26 @@
 		"title": "NVME Overheat ({{PI}})",
 		"vertical": "Total Seconds",
 		"legend_format": "%5.0lf"
+	},
+	"df_complex": {
+		"title": "Namespace Usage ({{PI}})",
+		"vertical": "Bytes",
+		"type": "stacked",
+		"legend": {
+			"reserved": {
+				"name": "Reserved",
+				"color": "aaaaaa"
+			},
+			"free": {
+				"name": "Free",
+				"color": "00ff00"
+			},
+			"used": {
+				"name": "Used",
+				"color": "ff0000"
+			}
+		},
+		"legend_format": "%5.1lf%sB",
+		"base": "1024"
 	}
 }
