@@ -89,6 +89,7 @@
 			}
 		},
 		"legend_format": "%5.1lf%ss",
-		"scale": 0.001
+		"scale": 0.001,
+		"rrdtool_opts": ["-l", "0"]
 	}
 }

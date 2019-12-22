@@ -3,6 +3,7 @@
 		"title": "Fan PWM on {{HOST}}",
 		"vertical": "%",
 		"scale": 0.39216,
-		"legend_format": "%5.1lf%%"
+		"legend_format": "%5.1lf%%",
+		"rrdtool_opts": ["-u", "100", "-l", "0"]
 	}
 }

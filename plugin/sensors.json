@@ -2,7 +2,8 @@
 	"fanspeed": {
 		"title": "Fanspeed ({{PI}}) on {{HOST}}",
 		"vertical": "RPM",
-		"legend_format": "%5.1lf"
+		"legend_format": "%5.1lf",
+		"rrdtool_opts": ["-l", "0"]
 	},
 	"temperature": {
 		"title": "Temperature ({{PI}}) on {{HOST}}",
@@ -12,7 +13,9 @@
 	},
 	"voltage": {
 		"title": "Voltage ({{PI}}) on {{HOST}}",
+		"vertical": "Volts",
 		"legend_format": "%3.2lf",
-		"type": "sensors"
+		"type": "sensors",
+		"rrdtool_opts": ["-l", "0"]
 	}
 }

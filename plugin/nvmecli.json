@@ -2,7 +2,8 @@
 	"uptime": {
 		"title": "NVME Operation Time ({{PI}})",
 		"vertical": "Hours",
-		"scale": 0.00027778
+		"scale": 0.00027778,
+		"rrdtool_opts": ["-l", "0"]
 	},
 	"total_bytes": {
 		"title": "NVME Traffic ({{PI}})",
@@ -45,27 +46,32 @@
 	"percent": {
 		"title": "NVME Health ({{PI}})",
 		"vertical": "%",
-		"legend_format": "%3.0lf%%"
+		"legend_format": "%3.0lf%%",
+		"rrdtool_opts": ["-u", "100", "-l", "0"]
 	},
 	"gauge": {
 		"title": "NVME Critical Warning ({{PI}})",
 		"vertical": "RAW",
-		"legend_format": "%2.0lf"
+		"legend_format": "%2.0lf",
+		"rrdtool_opts": ["-u", "32", "-l", "0"]
 	},
 	"count": {
 		"title": "NVME Power On ({{PI}})",
 		"vertical": "Total Count",
-		"legend_format": "%5.0lf"
+		"legend_format": "%5.0lf",
+		"rrdtool_opts": ["-l", "0"]
 	},
 	"disk_error": {
 		"title": "NVME Errors ({{PI}})",
 		"vertical": "Total Count",
-		"legend_format": "%5.0lf"
+		"legend_format": "%5.0lf",
+		"rrdtool_opts": ["-l", "0"]
 	},
 	"duration": {
 		"title": "NVME Overheat ({{PI}})",
 		"vertical": "Total Seconds",
-		"legend_format": "%5.0lf"
+		"legend_format": "%5.0lf",
+		"rrdtool_opts": ["-l", "0"]
 	},
 	"df_complex": {
 		"title": "Namespace Usage ({{PI}})",
@@ -86,6 +92,7 @@
 			}
 		},
 		"legend_format": "%5.1lf%sB",
-		"base": "1024"
+		"base": "1024",
+		"rrdtool_opts": ["-l", "0"]
 	}
 }

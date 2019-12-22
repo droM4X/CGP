@@ -34,10 +34,12 @@
 	},
 	"queue_length": {
 		"title": "Collectd Network Queue Length on {{HOST}}",
-		"vertical": "Metrics"
+		"vertical": "Metrics",
+		"rrdtool_opts": ["-l", "0"]
 	},
 	"total_values": {
 		"title": "Collectd Network Rates on {{HOST}}",
-		"vertical": "Metrics"
+		"vertical": "Metrics",
+		"rrdtool_opts": ["-l", "0"]
 	}
 }

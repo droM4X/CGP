@@ -7,7 +7,8 @@
 	"power": {
 		"title": "Power ({{PI}})",
 		"vertical": "W",
-		"legend_format": "%5.1lf"
+		"legend_format": "%5.1lf",
+		"rrdtool_opts": ["-l", "0"]
 	},
 	"frequency": {
 		"title": "Frequency ({{PI}})",
@@ -17,18 +18,19 @@
 	"percent": {
 		"title": "Utilization ({{PI}})",
 		"vertical": "%",
-		"legend_format": "%5.1lf%%"
+		"legend_format": "%5.1lf%%",
+		"rrdtool_opts": ["-u", "100", "-l", "0"]
 	},
 	"bitrate": {
 		"title": "PCIe Traffic ({{PI}})",
 		"vertical": "{{ND}}/s",
 		"type": "io",
 		"legend": {
-			"pcie_rx": {
+			"PCIe RX": {
 				"name": "Receive",
 				"color": "0000ff"
 			},
-			"pcie_tx": {
+			"PCIe TX": {
 				"name": "Transmit",
 				"color": "00b000"
 			}
@@ -38,11 +40,33 @@
 	},
 	"memory": {
 		"title": "RAM ({{PI}})",
-		"vertical": "Bytes"
+		"vertical": "Bytes",
+		"type": "stacked",
+		"legend": {
+			"Free": {
+				"name": "Free",
+				"color": "00e000"
+			},
+			"Used": {
+				"name": "Used",
+				"color": "ff0000"
+			},
+			"BAR1 Free": {
+				"name": "BAR1 Free",
+				"color": "00b000"
+			},
+			"BAR1 Used": {
+				"name": "BAR1 Used",
+				"color": "0000ff"
+			}
+		},
+		"base": "1024",
+		"rrdtool_opts": ["-l", "0"]
 	},
 	"fanspeed": {
 		"title": "Fan PWM ({{PI}})",
 		"vertical": "%",
-		"legend_format": "%3.0lf%%"
+		"legend_format": "%3.0lf%%",
+		"rrdtool_opts": ["-u", "100", "-l", "0"]
 	}
 }

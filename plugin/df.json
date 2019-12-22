@@ -18,7 +18,8 @@
 			}
 		},
 		"legend_format": "%5.1lf%sB",
-		"base": "1024"
+		"base": "1024",
+		"rrdtool_opts": ["-l", "0"]
 	},
 	"df_inodes": {
 		"title": "Free inodes ({{PI}}) on {{HOST}}",
@@ -38,7 +39,8 @@
 				"color": "ff0000"
 			}
 		},
-		"legend_format": "%5.1lf%s"
+		"legend_format": "%5.1lf%s",
+		"rrdtool_opts": ["-l", "0"]
 	},
 	"percent_bytes": {
 		"title": "Free space percentage ({{PI}}) on {{HOST}}",
@@ -58,6 +60,7 @@
 				"color": "ff0000"
 			}
 		},
-		"legend_format": "%5.1lf%%"
+		"legend_format": "%5.1lf%%",
+		"rrdtool_opts": ["-u", "100", "-l", "0"]
 	}
 }

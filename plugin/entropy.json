@@ -8,6 +8,7 @@
 				"color": "0000f0"
 			}
 		},
-		"legend_format": "%4.0lf"
+		"legend_format": "%4.0lf",
+		"rrdtool_opts": ["-l", "0"]
 	}
 }

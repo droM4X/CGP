@@ -12,7 +12,8 @@
 				"color": "f00000"
 			}
 		},
-		"legend_format": "%5.1lf%s"
+		"legend_format": "%5.1lf%s",
+		"rrdtool_opts": ["-l", "0"]
 	},
 	"vmpage_io": {
 		"title": "Page IO ({{TI}}) on {{HOST}}",
@@ -32,6 +33,13 @@
 	"vmpage_number": {
 		"title": "Pages on {{HOST}}",
 		"type": "stacked",
-		"legend_format": "%5.1lf%s"
+		"legend_format": "%5.1lf%s",
+		"rrdtool_opts": ["-l", "0"]
+	},
+	"vmpage_action": {
+		"title": "Page actions on {{HOST}}",
+		"type": "stacked",
+		"legend_format": "%5.1lf%s",
+		"rrdtool_opts": ["-l", "0"]
 	}
 }

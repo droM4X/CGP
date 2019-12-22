@@ -2,17 +2,20 @@
 	"ping": {
 		"title": "Ping latency on {{HOST}}",
 		"vertical": "Milliseconds",
-		"legend_format": "%5.1lf"
+		"legend_format": "%5.1lf",
+		"rrdtool_opts": ["-l", "0"]
 	},
 	"ping_stddev": {
 		"title": "Ping standard deviation on {{HOST}}",
 		"vertical": "Milliseconds",
-		"legend_format": "%5.1lf"
+		"legend_format": "%5.1lf",
+		"rrdtool_opts": ["-l", "0"]
 	},
 	"ping_droprate": {
 		"title": "Ping droprate on {{HOST}}",
 		"vertical": "percent",
 		"legend_format": "%5.1lf",
-		"scale": 100
+		"scale": 100,
+		"rrdtool_opts": ["-u", "100", "-l", "0"]
 	}
 }

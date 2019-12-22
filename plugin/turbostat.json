@@ -7,6 +7,12 @@
 	"power": {
 		"title": "CPU Power on {{HOST}}",
 		"vertical": "W",
+		"legend_format": "%5.1lf",
+		"rrdtool_opts": ["-l", "0"]
+	},
+	"tdp": {
+		"title": "CPU TDP on {{HOST}}",
+		"vertical": "W",
 		"legend_format": "%5.1lf"
 	},
 	"frequency": {
@@ -18,7 +24,8 @@
 	"percent": {
 		"title": "C-States ({{PI}})",
 		"vertical": "%",
-		"legend_format": "%5.1lf%%"
+		"legend_format": "%5.1lf%%",
+		"rrdtool_opts": ["-u", "100", "-l", "0"]
 	},
 	"gauge": {
 		"title": "Sanity Check ({{PI}})",

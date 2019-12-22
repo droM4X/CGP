@@ -146,7 +146,7 @@ if ($type == 'if_octets')
 	$obj->percentile = $CONFIG['percentile'];
 
 if (isset($plugin_json[$type]['scale']))
-	$obj->scale = $plugin_json[$type]['scale'];
+	$obj->scale = $obj->scale * $plugin_json[$type]['scale'];
 
 if (isset($plugin_json[$type]['base']))
 	$obj->base = $plugin_json[$type]['base'];

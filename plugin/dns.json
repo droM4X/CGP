@@ -12,21 +12,25 @@
 				"name": "Responses",
 				"color": "00ff00"
 			}
-		}
+		},
+		"rrdtool_opts": ["-l", "0"]
 	},
 	"dns_opcode": {
 		"title": "DNS Opcode Query on {{HOST}}",
 		"vertical": "Queries/s",
-		"type": "stacked"
+		"type": "stacked",
+		"rrdtool_opts": ["-l", "0"]
 	},
 	"dns_qtype": {
 		"title": "DNS QType on {{HOST}}",
 		"vertical": "Queries/s",
-		"type": "stacked"
+		"type": "stacked",
+		"rrdtool_opts": ["-l", "0"]
 	},
 	"dns_rcode": {
 		"title": "DNS Reply code on {{HOST}}",
 		"vertical": "Queries/s",
-		"type": "stacked"
+		"type": "stacked",
+		"rrdtool_opts": ["-l", "0"]
 	}
 }

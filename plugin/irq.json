@@ -3,6 +3,7 @@
 		"type": "stacked",
 		"title": "Interrupts on {{HOST}}",
 		"vertical": "IRQs/s",
-		"legend_format": "%6.1lf"
+		"legend_format": "%6.1lf",
+		"rrdtool_opts": ["-l", "0"]
 	}
 }

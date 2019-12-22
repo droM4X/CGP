@@ -37,7 +37,8 @@
 				"color": "ff0000"
 			}
 		},
-		"legend_format": "%5.1lf%s"
+		"legend_format": "%5.1lf%s",
+		"rrdtool_opts": ["-l", "0"]
 	},
 	"fork_rate": {
 		"title": "Fork rate on {{HOST}}",
@@ -49,7 +50,8 @@
 				"color": "f0a000"
 			}
 		},
-		"legend_format": "%5.1lf%s"
+		"legend_format": "%5.1lf%s",
+		"rrdtool_opts": ["-l", "0"]
 	},
 	"ps_code": {
 		"title": "Text Resident Set ({{PI}}) on {{HOST}}",
@@ -61,7 +63,8 @@
 				"color": "0000ff"
 			}
 		},
-		"legend_format": "%5.1lf%s"
+		"legend_format": "%5.1lf%s",
+		"rrdtool_opts": ["-l", "0"]
 	},
 	"ps_count": {
 		"title": "Number of Processes/Threads ({{PI}}) on {{HOST}}",
@@ -77,7 +80,8 @@
 				"color": "ff0000"
 			}
 		},
-		"legend_format": "%5.1lf%s"
+		"legend_format": "%5.1lf%s",
+		"rrdtool_opts": ["-l", "0"]
 	},
 	"ps_cputime": {
 		"title": "CPU time ({{PI}}) on {{HOST}}",
@@ -93,7 +97,8 @@
 				"color": "ff0000"
 			}
 		},
-		"legend_format": "%5.1lf%s"
+		"legend_format": "%5.1lf%s",
+		"rrdtool_opts": ["-l", "0"]
 	},
 	"ps_disk_octets": {
 		"title": "Disk Traffic ({{PI}}) on {{HOST}}",
@@ -137,7 +142,8 @@
 				"color": "0000ff"
 			}
 		},
-		"legend_format": "%5.1lf%s"
+		"legend_format": "%5.1lf%s",
+		"rrdtool_opts": ["-l", "0"]
 	},
 	"ps_pagefaults": {
 		"title": "PageFaults ({{PI}}) on {{HOST}}",
@@ -153,7 +159,8 @@
 				"color": "0000ff"
 			}
 		},
-		"legend_format": "%5.1lf%s"
+		"legend_format": "%5.1lf%s",
+		"rrdtool_opts": ["-l", "0"]
 	},
 	"ps_rss": {
 		"title": "Resident Segment Size ({{PI}}) on {{HOST}}",
@@ -165,7 +172,8 @@
 				"color": "0000ff"
 			}
 		},
-		"legend_format": "%5.1lf%s"
+		"legend_format": "%5.1lf%s",
+		"rrdtool_opts": ["-l", "0"]
 	},
 	"ps_stacksize": {
 		"title": "Stacksize ({{PI}}) on {{HOST}}",
@@ -177,7 +185,8 @@
 				"color": "0000ff"
 			}
 		},
-		"legend_format": "%5.1lf%s"
+		"legend_format": "%5.1lf%s",
+		"rrdtool_opts": ["-l", "0"]
 	},
 	"ps_vm": {
 		"title": "Virtual Memory ({{PI}}) on {{HOST}}",
@@ -189,6 +198,7 @@
 				"color": "0000ff"
 			}
 		},
-		"legend_format": "%5.1lf%s"
+		"legend_format": "%5.1lf%s",
+		"rrdtool_opts": ["-l", "0"]
 	}
 }

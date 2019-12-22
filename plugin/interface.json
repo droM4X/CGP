@@ -30,7 +30,8 @@
 				"color": "00b000"
 			}
 		},
-		"legend_format": "%5.1lf%s"
+		"legend_format": "%5.1lf%s",
+		"rrdtool_opts": ["-l", "0"]
 	},
 	"if_packets": {
 		"title": "Interface Packets ({{PI}}) on {{HOST}}",
@@ -62,6 +63,7 @@
 				"color": "00b000"
 			}
 		},
-		"legend_format": "%5.1lf%s"
+		"legend_format": "%5.1lf%s",
+		"rrdtool_opts": ["-l", "0"]
 	}
 }
