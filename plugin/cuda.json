@@ -64,9 +64,38 @@
 		"rrdtool_opts": ["-l", "0"]
 	},
 	"fanspeed": {
-		"title": "Fan PWM ({{PI}})",
+		"title": "Fan PWM",
 		"vertical": "%",
 		"legend_format": "%3.0lf%%",
 		"rrdtool_opts": ["-u", "100", "-l", "0"]
+	},
+	"bytes": {
+		"title": "App Memory Usage",
+		"vertical": "Bytes",
+		"base": "1024",
+		"rrdtool_opts": ["-l", "0"]
+	},
+	"users": {
+		"title": "Users ({{PI}})",
+		"vertical": "Amount",
+		"legend_format": "%.0lf",
+		"rrdtool_opts": ["-l", "0"]
+	},
+	"gauge": {
+		"title": "P States ({{PI}})",
+		"vertical": "State",
+		"legend_format": "P%.0lf",
+		"rrdtool_opts": ["-u", "15", "-l", "0"]
+	},
+	"operations_per_second": {
+		"title": "FPS ({{PI}})",
+		"vertical": "FPS",
+		"legend_format": "%.0lf",
+		"rrdtool_opts": ["-l", "0"]
+	},
+	"latency": {
+		"title": "Latency ({{PI}})",
+		"vertical": "s",
+		"rrdtool_opts": ["-l", "0"]
 	}
 }

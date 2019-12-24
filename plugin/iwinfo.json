@@ -35,11 +35,13 @@
 	"stations": {
 		"title": "Associated Stations ({{PI}}) on {{HOST}}",
 		"vertical": "Count",
-		"legend_format": "%3.0lf"
+		"legend_format": "%3.0lf",
+		"rrdtool_opts": ["-l", "0"]
 	},
 	"bitrate": {
 		"title": "Average PHY Rate ({{PI}}) on {{HOST}}",
 		"vertical": "bps",
-		"legend_format": "%6.1lf%s"
+		"legend_format": "%6.1lf%s",
+		"rrdtool_opts": ["-l", "0"]
 	}
 }

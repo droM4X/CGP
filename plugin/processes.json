@@ -37,7 +37,7 @@
 				"color": "ff0000"
 			}
 		},
-		"legend_format": "%5.1lf%s",
+		"legend_format": "%.0lf",
 		"rrdtool_opts": ["-l", "0"]
 	},
 	"fork_rate": {
@@ -80,7 +80,7 @@
 				"color": "ff0000"
 			}
 		},
-		"legend_format": "%5.1lf%s",
+		"legend_format": "%.0lf",
 		"rrdtool_opts": ["-l", "0"]
 	},
 	"ps_cputime": {

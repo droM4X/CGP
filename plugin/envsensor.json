@@ -7,6 +7,7 @@
 	},
 	"voltage": {
 		"title": "Voltage ({{PI}}) on {{HOST}}",
+		"vertical": "Volts",
 		"legend_format": "%3.2lf",
 		"type": "sensors"
 	},
@@ -20,7 +21,8 @@
 		"title": "Humidity ({{PI}}) on {{HOST}}",
 		"vertical": "RH (%)",
 		"legend_format": "%3.2lf",
-		"type": "sensors"
+		"type": "sensors",
+		"rrdtool_opts": ["-u", "100", "-l", "0"]
 	},
 	"percent": {
 		"title": "Percentage ({{PI}}) on {{HOST}}",

@@ -15,7 +15,6 @@
 		"title": "Voltage ({{PI}}) on {{HOST}}",
 		"vertical": "Volts",
 		"legend_format": "%3.2lf",
-		"type": "sensors",
-		"rrdtool_opts": ["-l", "0"]
+		"type": "sensors"
 	}
 }
