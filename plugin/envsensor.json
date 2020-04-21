@@ -54,9 +54,14 @@
 		"type": "sensors"
 	},
 	"count": {
- 		"title": "Count ({{PI}}) on {{HOST}}",
+ 		"title": "Unsigned value ({{PI}}) on {{HOST}}",
  		"legend_format": "%3.2lf%s",
  		"type": "sensorslog"
- 	}
+ 	},
+	"duration": {
+		"title": "Duration ({{PI}}) on {{HOST}}",
+		"vertical": "s",
+		"legend_format": "%3.2lf%s",
+		"type": "sensors"
+	}
 }
-
