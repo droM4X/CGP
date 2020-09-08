@@ -3,6 +3,12 @@ body {
 	margin: 0px;
 }
 
+select#change-host {
+	display: flex;
+	font-size: 20px;
+	padding: 5px;
+}
+
 label[for="navicon"] {
 	display: none;
 

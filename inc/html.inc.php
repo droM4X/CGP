@@ -24,6 +24,8 @@ function html_start() {
 	<link rel="stylesheet" href="{$html_weburl}layout/style-b.css" type="text/css" media="(max-width: 1000px),(max-device-width: 1000px) and (orientation: portrait),(max-device-width: 767px) and (orientation: landscape)">
 	<link rel="stylesheet" href="{$html_weburl}layout/style-c.css" type="text/css" media="(max-width: 767px),(max-device-width: 767px) and (orientation: portrait),(max-device-width: 499px) and (orientation: landscape)">
 	<link rel="stylesheet" href="{$html_weburl}layout/style-d.css" type="text/css" media="(max-width: 499px),(max-device-width: 499px) and (orientation: portrait)">
+        <script type="text/javascript" src="{$html_weburl}js/jquery-3.5.1.slim.min.js"></script>
+	<script type="text/javascript" src="{$html_weburl}js/Common.js"></script>
 
 EOT;
 	if (isset($CONFIG['page_refresh']) && is_numeric($CONFIG['page_refresh'])) {
@@ -51,7 +53,6 @@ EOT;
 
 	if ($CONFIG['showtime']) {
 		echo <<<EOT
-	<script type="text/javascript" src="{$html_weburl}js/jquery-2.1.1.min.js"></script>
 	<script type="text/javascript" src="{$html_weburl}js/jquery.timeago.js"></script>
 
 EOT;
@@ -391,4 +392,19 @@ function build_url($base, $items, $s=NULL) {
 		$items['s'] = $s;
 
 	return "$base?" . http_build_query($items, '', '&');
+}
+
+function quick_host_change($host=""){
+
+    if ($host == "") return false;
+    $hosts = collectd_hosts();
+
+    print '<select id="change-host">';
+
+        foreach($hosts AS $hostname){
+            $default = ($hostname == $host) ? ' selected="selected"' : '';
+            printf('<option value="%s"%s>%s</option>', htmlentities($hostname), $default, htmlentities($hostname));
+        }
+
+    print '</select>';
 }
