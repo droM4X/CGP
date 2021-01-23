@@ -37,16 +37,7 @@ $CONFIG['showload'] = true;
 $CONFIG['showmem'] = true;
 $CONFIG['showtime'] = true;
 
-$CONFIG['term'] = array(
-<<<<<<< .merge_file_EYk6Pz
-	'1hour'	 => 3600 * 1,
-	'12hour' => 3600 * 12,
-	'day'	 => 86400,
-	'week'	 => 86400 * 7,
-	'month'	 => 86400 * 31,
-	'quarter'=> 86400 * 31 * 3,
-	'year'	 => 86400 * 365,
-=======
+$CONFIG['term'] = [
 	'2hour'      => 3600 * 2,
 	'8hour'      => 3600 * 8,
 	'day'        => 86400,
@@ -54,8 +45,7 @@ $CONFIG['term'] = array(
 	'month'      => 86400 * 31,
 	'quarter'    => 86400 * 31 * 3,
 	'year'       => 86400 * 365,
->>>>>>> .merge_file_iT8FPf
-);
+];
 
 # show graphs in bits or bytes
 $CONFIG['network_datasize'] = 'bytes';
